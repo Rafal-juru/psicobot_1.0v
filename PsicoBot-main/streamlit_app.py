@@ -20,7 +20,7 @@ with st.sidebar:
             st.warning('Insira suas credencias ', icon='⚠️')
         else:
             st.success('Pode falar com o bot!', icon='👉')
-
+    os.environ['REPLICATE_API_TOKEN'] = replicate_api        #não da pra tirar isso aq  
     #llm = 'a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea'
 
 # Guarda o historico do chat LLM
